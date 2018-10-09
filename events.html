@@ -8,7 +8,6 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="shortcut icon" href="files/favicon.ico" />
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,greek,latin-ext' rel='stylesheet' type='text/css'> -->
-
 	<style>
 		*, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
@@ -79,6 +78,8 @@
         }
         img {
             border: 5px solid black;
+            max-height: 100%;
+            max-width: 100%;
         }
 		#content a {
 			color :#e10707;
@@ -107,19 +108,18 @@
 			margin-left: 20px;
 		}
 		.backlinks {
-			color:gray;
+			color: #000;
 		}
 		hr.footnotes {
 			width: 20%;
 			margin-left: 0;
 		}
-		img {
-            max-height: 100%;
-            max-width: 100%;
-        } 
 	@media (min-width: 47.5em ) and (orientation: landscape) {
 	#content { margin-right: 19.5em;}
 	#navigation { position: absolute; top: 0; right: 0; width: 18.75em;}   
+	}
+	@media (min-width: 80em ) and (orientation: landscape ) {
+	#content { margin: auto; width: 50% }
 	}
 		
 	</style>
